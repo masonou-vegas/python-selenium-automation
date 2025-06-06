@@ -20,7 +20,7 @@ sleep(2)
 
 @then('Click view cart')
 def click_view_cart(context):
-    context.driver.find_element(By.CSS_SELECTOR, '.styles_ndsBaseButton__W8Gl7 styles_md__X_r95 styles_mdGap__9J0yq styles_fullWidth__3XX6f styles_ndsButtonSecondary__iSf2I')
+    context.driver.find_element(By.CSS_SELECTOR, '.styles_ndsBaseButton__W8Gl7 styles_md__X_r95 styles_mdGap__9J0yq styles_fullWidth__3XX6f styles_ndsButtonSecondary__iSf2I').click()
 sleep(2)
 @then('Verify product is in cart')
 def verify_product(context):
