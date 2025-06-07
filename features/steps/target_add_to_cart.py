@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 from behave import given, when, then
 from time import sleep
 
-@given('Open target main page')
-def open_main_page(context):
+@given('Open target home page')
+def open_home_page(context):
     context.driver.get('https://www.target.com/')
 
 @when('Click add to cart')
