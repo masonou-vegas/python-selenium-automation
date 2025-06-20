@@ -18,3 +18,12 @@ Feature: Sign in form opens for a signed out user
       When Click sign in with password button
       Then User is logged in
 
+
+  Scenario: User can open and close Terms and Conditions from sign in page
+    Given Open sign in page
+    When Store original window
+    Then Click on Target terms and conditions link
+    Then Switch to the newly opened window
+    Then Verify Terms and Conditions page is opened
+    Then User can close new window and switch back to original
+
