@@ -5,7 +5,7 @@ from time import sleep
 class SignIn(Page):
     SIGN_IN_TEXT = (By.CSS_SELECTOR, ".styles_ndsHeading__HcGpD.styles_fontSize1__i0fbt.styles_x2Margin__M5gHh.h-text-lg.h-text-center.h-margin-b-tiny")
     EMAIL = (By.ID, "username")
-    TERMS_LINK = (By.CSS_SELECTOR, ".styles_ndsLink__GUaai styles_defaultColor__DyqlX styles_invertDecorate__Vx5Wz h-text-bold h-text-md")
+    TERMS_LINK = (By.CSS_SELECTOR, '[aria-label="terms & conditions - opens in a new window"]')
     def verify_sign_in(self):
         self.find_element(*self.SIGN_IN_TEXT)
 

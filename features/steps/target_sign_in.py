@@ -44,10 +44,11 @@ def click_on_target_terms_and_conditions_link(context):
 @then('Switch to the newly opened window')
 def switch_to_newly_opened_window(context):
     context.app.base_page.switch_to_new_window()
+    sleep(2)
 
 @then('Verify Terms and Conditions page is opened')
 def verify_terms_and_conditions_page_is_opened(context):
-    context.app.terms_and_conditions_page.verify_terms_and_conditions_page_is_opened()
+    context.app.terms_page.verify_terms_and_conditions_page_is_opened()
 
 @then('User can close new window and switch back to original')
 def user_close_new_window(context):

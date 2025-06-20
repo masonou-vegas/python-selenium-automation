@@ -16,6 +16,7 @@ class Application:
         self.cart_page = CartPage(driver)
         self.privacy_policy_page = PrivacyPolicyPage(driver)
         self.target_app_page = TargetAppPage(driver)
+        self.terms_page = TermsPage(driver)
         self.header = Header(driver)
         self.main_page = MainPage(driver)
         self.search_results_page = SearchResultsPage(driver)
